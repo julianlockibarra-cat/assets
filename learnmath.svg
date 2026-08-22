@@ -90,7 +90,6 @@
                     const fileListElement = document.getElementById('fileList');
                     const statusElement = document.getElementById('status');
 
-                    // HELPER: Forces elements to render as true HTML nodes inside the SVG namespace
                     function createHTML(tag) {
                         return document.createElementNS('http://www.w3.org/1999/xhtml', tag);
                     }
@@ -126,17 +125,17 @@
                             btnGroup.style.flexWrap = 'wrap';
 
                             const blankBtn = createHTML('button');
-                            blankBtn.innerText = 'about:blank';
+                            blankBtn.innerText = 'open in blank tab';
                             blankBtn.onclick = () => fetchAndOpen(file.path, 'blank');
 
                             const blobBtn = createHTML('button');
                             blobBtn.className = 'blob-btn';
-                            blobBtn.innerText = 'blob:';
+                            blobBtn.innerText = 'open in blob tab';
                             blobBtn.onclick = () => fetchAndOpen(file.path, 'blob');
 
                             const dataBtn = createHTML('button');
                             dataBtn.className = 'data-btn';
-                            dataBtn.innerText = 'data:';
+                            dataBtn.innerText = 'open in data tab';
                             dataBtn.onclick = (e) => fetchAndOpen(file.path, 'data', btnGroup);
 
                             const dlBtn = createHTML('button');
