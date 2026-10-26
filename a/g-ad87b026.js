@@ -1,0 +1,1 @@
+self.__uv$config={prefix:"/s3/aura/",encodeUrl:Ultraviolet.codec.xor.encode,decodeUrl:Ultraviolet.codec.xor.decode,handler:"/assets/h-8b3dfdfd.js",client:"/assets/c-9dcde7d7.js",bundle:"/assets/b-24c817c4.js",config:"",sw:"/assets/s-bdaf47b5.js"};
